@@ -30,7 +30,7 @@ Matlab에 내재된 transformation 함수를 이용하여, z transform 의 꼴�
 
 
 
-## 2. Bilinear Method
+###### 2. Bilinear Method
 # 2.1 Transformation of variables
 Laplace transform의 s plane 으로부터 Z transform 의 z plane 으로 옮겨오는 과정이다. 
 S-plane 의 y축, 즉 허수 부분은 Z-plane 의 unit circle 에 해당함을 기억하자. 
