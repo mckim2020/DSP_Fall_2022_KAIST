@@ -1,8 +1,8 @@
-2020FALL_DSP
+#2020FALL_DSP
 -------------------------
-## Filter Design 
+# Filter Design Basics
 
-# 0. 기본기 - 들어가기 앞서
+## 0. 기본기 - 들어가기 앞서
 ### 0.1 MATLAB function
 Matlab 에서는 임의의 n개의 변수를 받아 임의의 k개의 변수를 창출해내는 행위가 가능하다. 
 과정은 대부분 다음과 같다. 
@@ -12,8 +12,9 @@ Z-plane 그릴 때:
 
 System 의 frequency response 분석 도구
 
-# 0.3 
-# 1. Impulse Invariance Method
+# 0.3 ???
+
+## 1. Impulse Invariance Method
 ### 1.1 Normalization of bands
 먼저, Passband과 Stopband 두 경계선을 Td, 즉 sampling interval 로 나누어 주는 Band Normalization을 진행한다. 
 ### 1.2 Find analog filter prototype
@@ -30,7 +31,7 @@ Matlab에 내재된 transformation 함수를 이용하여, z transform 의 꼴�
 
 
 
-# 2. Bilinear Method
+## 2. Bilinear Method
 ### 2.1 Transformation of variables
 Laplace transform의 s plane 으로부터 Z transform 의 z plane 으로 옮겨오는 과정이다. 
 S-plane 의 y축, 즉 허수 부분은 Z-plane 의 unit circle 에 해당함을 기억하자. 
