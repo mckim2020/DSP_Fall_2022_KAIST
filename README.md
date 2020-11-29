@@ -13,9 +13,9 @@ Matlab 에서는 임의의 n개의 변수를 받아 임의의 k개의 변수를 
 </code>
 </pre>
 
-Filter Design 을 위한 링크
-[Cheby1ord](https://www.mathworks.com/help/signal/ref/cheb1ord.html)
-[cheby1]
+> Filter Design 을 위한 링크
+> > [Cheby1ord](https://www.mathworks.com/help/signal/ref/cheb1ord.html)
+> >[cheby1]
 
 System Function 꼴로 나타내는 방법에는 다음과 같이 크게 두 가지가 있다.
 
