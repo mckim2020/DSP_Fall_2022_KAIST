@@ -16,6 +16,7 @@ Matlab 에서는 임의의 n개의 변수를 받아 임의의 k개의 변수를 
 <pre>
 <code>
 tf2zp(b, a); % Transfer function to Zero Pole K(constant)
+
 zp2tf(bz, az, k); % Zero Pole K(constant) to Transfer function 
 </code>
 </pre>
@@ -24,8 +25,11 @@ zp2tf(bz, az, k); % Zero Pole K(constant) to Transfer function
 <pre>
 <code>
 zplane(bz, az); % Z-plane 그릴 때
+
 freqs(b, a) % System function이 s 에 대한 함수일 경우 == Transfer function
+
 freqz(bz, az) % System function이 z에 대한 함수일 경우
+
 fvtool(bz, az); % System 의 frequency response 분석 도구
 </code>
 </pre>
