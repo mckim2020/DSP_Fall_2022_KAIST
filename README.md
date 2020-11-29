@@ -9,12 +9,10 @@ Matlab 에서는 임의의 n개의 변수를 받아 임의의 k개의 변수를 
 
 ### 0.2 도구의 사용
 Z-plane 그릴 때:
-'''
-zplane(bz, az)
-'''
+    zplane(bz, az);
 
 System 의 frequency response 분석 도구
-
+    fvtool(bz, az);
 # 0.3 ???
 
 ## 1. Impulse Invariance Method
