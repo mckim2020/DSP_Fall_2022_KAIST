@@ -6,21 +6,29 @@
 ### 0.1 MATLAB function
 Matlab 에서는 임의의 n개의 변수를 받아 임의의 k개의 변수를 창출해내는 행위가 가능하다. 
 과정은 대부분 다음과 같다. 
-
-### 0.2 도구의 사용
-Z-plane 그릴 때:
 <pre>
 <code>
-zplane(bz, az);
+[n,Wc] = cheb1ord(Wp,Ws,atp,ats, 's');
+</code>
+</pre>
+또한, system function representation 기법으로 두 가지, zpk 혹은 tf 를 이용한다. 
+둘 사이 변환을 위한 함수는 다음과 같다. 
+<pre>
+<code>
+tf2zp(b, a); % Transfer function to Zero Pole K(constant)
+zp2tf(bz, az, k); % Zero Pole K(constant) to Transfer function 
 </code>
 </pre>
 
-System 의 frequency response 분석 도구
+### 0.2 도구의 사용
 <pre>
 <code>
-fvtool(bz, az);
+zplane(bz, az); % Z-plane 그릴 때
+freqs(b, a) % System function이 s 에 대한 함수일 경우 == Transfer function
+freqz(bz, az) % System function이 z에 대한 함수일 경우
+fvtool(bz, az); % System 의 frequency response 분석 도구
 </code>
-</pre> 
+</pre>
 
 # 0.3 ???
 
