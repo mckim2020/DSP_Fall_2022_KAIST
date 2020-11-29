@@ -3,15 +3,19 @@
 # Filter Design Basics
 
 ## 0. 기본기 - 들어가기 앞서
-### 0.1 MATLAB function
+### 0.1 MATLAB functions
 Matlab 에서는 임의의 n개의 변수를 받아 임의의 k개의 변수를 창출해내는 행위가 가능하다. 
-과정은 대부분 다음과 같다. 
+사용법은 간단하고 대부분 다음과 같다. 
 <pre>
 <code>
-[n,Wc] = cheb1ord(Wp,Ws,atp,ats, 's');
+[n, Wc] = cheb1ord(Wp, Ws, atp, ats, 's');
 
 </code>
 </pre>
+
+Filter Design 을 위한 링크
+[Cheby1ord](https://www.mathworks.com/help/signal/ref/cheb1ord.html)
+[cheby1]
 
 System Function 꼴로 나타내는 방법에는 다음과 같이 크게 두 가지가 있다.
 
@@ -59,7 +63,7 @@ Ws = ws / Td; % Stop Band
 
 <pre>
 <code>
-[n,Wc] = cheb1ord(Wp,Ws,atp,ats, 's');
+[n, Wc] = cheb1ord(Wp, Ws, atp, ats, 's');
 
 </pre>
 </code>
@@ -68,7 +72,7 @@ Ws = ws / Td; % Stop Band
 
 <pre>
 <code>
-[b,a] = cheby1(n,atp,Wc, 's');
+[b, a] = cheby1(n, atp, Wc, 's');
 
 </pre>
 </code>
@@ -91,7 +95,7 @@ Matlab에 내재된 impinvar(systemVar1, systemVar2, fs) 함수를 이용하여,
 
 <pre>
 <code>
-[bz,az] = impinvar(bt,at,1/Td);
+[bz, az] = impinvar(bt, at, 1/Td);
 
 </pre>
 </code>
