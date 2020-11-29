@@ -13,30 +13,43 @@ Matlab 에서는 임의의 n개의 변수를 받아 임의의 k개의 변수를 
 </code>
 </pre>
 
-> Filter Design Functions Descriptions
+### Filter Design Functions Descriptions
 
->> [Cheby1ord](https://www.mathworks.com/help/signal/ref/cheb1ord.html)
+#### Optimizing / Prototypes
+> [Cheby1ord](https://www.mathworks.com/help/signal/ref/cheb1ord.html)
 
->> [cheby1](https://www.mathworks.com/help/signal/ref/cheby1.html)
+> [cheby1](https://www.mathworks.com/help/signal/ref/cheby1.html)
 
->> [Bilinear](https://www.mathworks.com/help/signal/ref/bilinear.html?searchHighlight=bilinear&s_tid=srchtitle)
+> [cheb2ord](https://www.mathworks.com/help/signal/ref/cheb2ord.html?searchHighlight=cheby2ord&s_tid=srchtitle)
 
->> [ImpulseInvariance](https://www.mathworks.com/help/signal/ref/impinvar.html?searchHighlight=impinvar&s_tid=srchtitle)
+> [cheby2](https://www.mathworks.com/help/signal/ref/cheby2.html)
 
->> [tf](https://www.mathworks.com/help/signal/ref/tf.html?searchHighlight=tf&s_tid=srchtitle)
+> [buttord](https://www.mathworks.com/help/signal/ref/buttord.html?searchHighlight=buttord&s_tid=srchtitle)
 
->> [Anothertf](https://www.mathworks.com/help/dsp/ref/dsp.notchpeakfilter.tfnotchpeakfilter.html)
+> [butter](https://www.mathworks.com/help/signal/ref/butter.html?searchHighlight=butter&s_tid=srchtitle)
 
->> [zpk](https://www.mathworks.com/help/signal/ref/zpk.html)
+> [ellipord](https://www.mathworks.com/help/signal/ref/ellipord.html)
 
->> [tf2zp](https://www.mathworks.com/help/signal/ref/tf2zp.html)
+> [elllip](https://www.mathworks.com/help/signal/ref/ellip.html)
 
->> [lp2lp](https://www.mathworks.com/help/signal/ref/lp2lp.html?searchHighlight=lp2lp&s_tid=srchtitle)
+#### Transformation 
+> [Bilinear](https://www.mathworks.com/help/signal/ref/bilinear.html?searchHighlight=bilinear&s_tid=srchtitle)
 
+> [ImpulseInvariance](https://www.mathworks.com/help/signal/ref/impinvar.html?searchHighlight=impinvar&s_tid=srchtitle)
 
-System Function 꼴로 나타내는 방법에는 다음과 같이 크게 두 가지가 있다.
+> [tf2zp](https://www.mathworks.com/help/signal/ref/tf2zp.html)
 
-둘 사이 변환을 위한 함수는 다음과 같다. 
+> [lp2lp](https://www.mathworks.com/help/signal/ref/lp2lp.html?searchHighlight=lp2lp&s_tid=srchtitle)
+
+#### System Function Representation 
+
+> [tf](https://www.mathworks.com/help/signal/ref/tf.html?searchHighlight=tf&s_tid=srchtitle)
+
+> [Anothertf](https://www.mathworks.com/help/dsp/ref/dsp.notchpeakfilter.tfnotchpeakfilter.html)
+
+> [zpk](https://www.mathworks.com/help/signal/ref/zpk.html)
+
+Note: 둘 사이 변환을 위한 함수는 다음과 같이 사용한다. 
 <pre>
 <code>
 tf2zp(b, a); % Transfer function to Zero Pole K(constant)
@@ -46,7 +59,7 @@ zp2tf(bz, az, k); % Zero Pole K(constant) to Transfer function
 </code>
 </pre>
 
-### 0.2 도구의 사용
+### 0.2 Tools
 <pre>
 <code>
 zplane(bz, az); % Z-plane 그릴 때
