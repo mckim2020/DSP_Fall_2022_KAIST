@@ -60,6 +60,7 @@ Ws = ws / Td; % Stop Band
 <pre>
 <code>
 [n,Wc] = cheb1ord(Wp,Ws,atp,ats, 's');
+
 </pre>
 </code>
 
@@ -68,6 +69,7 @@ Ws = ws / Td; % Stop Band
 <pre>
 <code>
 [b,a] = cheby1(n,atp,Wc, 's');
+
 </pre>
 </code>
 
@@ -77,6 +79,7 @@ Ws = ws / Td; % Stop Band
 <pre>
 <code>
 [bt, at] = lp2lp(b, a, Wc);
+
 </pre>
 </code>
 
@@ -84,11 +87,12 @@ Ws = ws / Td; % Stop Band
 
 
 ### 1.4 Transformation 
-Matlab에 내재된 transformation 함수를 이용하여, z transform 의 꼴로 변환된 "new system function"을 얻도록 하자.
+Matlab에 내재된 impinvar(systemVar1, systemVar2, fs) 함수를 이용하여, z transform 의 꼴로 변환된 "new system function"을 얻도록 하자.
 
 <pre>
 <code>
 [bz,az] = impinvar(bt,at,1/Td);
+
 </pre>
 </code>
 
