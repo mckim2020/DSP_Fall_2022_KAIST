@@ -1,4 +1,4 @@
-#2020FALL_DSP
+# 2020FALL_DSP
 -------------------------
 # Filter Design Basics
 
@@ -74,7 +74,7 @@ fvtool(bz, az); % System 의 frequency response 분석 도구
 </pre>
 
 # 0.3 ???
-
+---------------------------------------------
 ## 1. Impulse Invariance Method
 ### 1.1 Normalization of bands
 먼저, Passband과 Stopband 두 경계선을 Td, 즉 sampling interval 로 나누어 주는 Band Normalization을 진행한다. 
@@ -129,7 +129,7 @@ Matlab에 내재된 impinvar(systemVar1, systemVar2, fs) 함수를 이용하여,
 
 </pre>
 </code>
-
+--------------------------------
 ## 2. Bilinear Method
 ### 2.1 Transformation of variables
 Laplace transform의 s plane 으로부터 Z transform 의 z plane 으로 옮겨오는 과정이다. 
