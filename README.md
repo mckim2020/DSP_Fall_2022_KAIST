@@ -33,9 +33,9 @@ Matlab 에서는 임의의 n개의 변수를 받아 임의의 k개의 변수를 
 > [elllip](https://www.mathworks.com/help/signal/ref/ellip.html)
 
 #### Transformation 
-> [Bilinear](https://www.mathworks.com/help/signal/ref/bilinear.html?searchHighlight=bilinear&s_tid=srchtitle)
+> [bilinear](https://www.mathworks.com/help/signal/ref/bilinear.html?searchHighlight=bilinear&s_tid=srchtitle)
 
-> [ImpulseInvariance](https://www.mathworks.com/help/signal/ref/impinvar.html?searchHighlight=impinvar&s_tid=srchtitle)
+> [impinvar](https://www.mathworks.com/help/signal/ref/impinvar.html?searchHighlight=impinvar&s_tid=srchtitle)
 
 > [tf2zp](https://www.mathworks.com/help/signal/ref/tf2zp.html)
 
