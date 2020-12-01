@@ -49,6 +49,18 @@ Matlab 에서는 임의의 n개의 변수를 받아 임의의 k개의 변수를 
 
 > [zpk](https://www.mathworks.com/help/signal/ref/zpk.html)
 
+#### Windowing 
+
+> [rectwin](https://www.mathworks.com/help/signal/ref/rectwin.html)
+
+>[impz](https://www.mathworks.com/help/signal/ref/impz.html#mw_24b4e23a-81f9-4d8f-a24b-ac6a756a35c7)
+
+>[fir1](https://www.mathworks.com/help/signal/ref/fir1.html)
+
+>[designfilt](https://www.mathworks.com/help/signal/ref/designfilt.html)
+
+
+
 Note: 둘 사이 변환을 위한 함수는 다음과 같이 사용한다. 
 <pre>
 <code>
