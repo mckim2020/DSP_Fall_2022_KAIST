@@ -1,4 +1,7 @@
 # 2020FALL_DSP
+
+This file is for KAIST students who are taking Digital Signal Processing (EE432), especially regarding filter design using MATLAB.
+
 -------------------------
 # Filter Design Basics
 
